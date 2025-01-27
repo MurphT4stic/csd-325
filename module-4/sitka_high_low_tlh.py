@@ -21,7 +21,7 @@ with open(filename) as f:
             dates.append(current_date)
             highs.append(high)
             lows.append(low)
-
+#Plot highs for graph
 def plot_highs():
     plt.figure(dpi=128, figsize=(10, 6))
     plt.plot(dates, highs, c= 'red', label='Highs')
@@ -32,6 +32,7 @@ def plot_highs():
     plt.legend()
     plt.show()
 
+#Plot lows for grap
 def plot_lows():
     plt.figure(dpi=128, figsize=(10, 6))
     plt.plot(dates, lows, c='blue', label='Lows')
@@ -42,6 +43,7 @@ def plot_lows():
     plt.legend()
     plt.show()
 
+#Welcome message with choices
 def main():
     print("""Welcome to the Sitka Weather View.
           
@@ -51,6 +53,7 @@ def main():
           3. Exit
           """)
     
+    #User inputs three different choices 
     while True: 
         choice = input("Enter your choice: (1, 2, or 3): ").strip()
 
